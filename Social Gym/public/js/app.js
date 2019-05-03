@@ -16,3 +16,4 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+console.log("Database Initialized!");
