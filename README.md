@@ -18,3 +18,9 @@ ________________________________________________________________________________
 ## Quais as características técnicas da solução e recursos  necessários?
 
 ## Como será demonstrada a solução (protótipo)?
+
+________________________________________________________________________________________________________________________________________
+
+## Canvas
+
+<a href="https://github.com/kono-chi-no-sada-me/SocialGym/blob/master/Social%20Gym/images/20190503_142221.jpg"> Conceito da ideia </a>
