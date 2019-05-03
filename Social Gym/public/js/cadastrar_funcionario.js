@@ -34,7 +34,7 @@ function cadastrar_funcionario(){
 		if (error) {
 			console.log("error");
 		} else {
-			window.alert("Dados salvos");
+			console.log("Dados salvos");
 		}
 	});
 
