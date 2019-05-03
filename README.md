@@ -24,3 +24,4 @@ ________________________________________________________________________________
 ## Canvas
 
 <a href="https://github.com/kono-chi-no-sada-me/SocialGym/blob/master/Social%20Gym/images/20190503_142221.jpg"> Conceito da ideia </a>
+<blockquote class="imgur-embed-pub" lang="en" data-id="b6xzf9L"><a href="//imgur.com/b6xzf9L"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
