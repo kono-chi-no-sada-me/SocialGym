@@ -8,16 +8,10 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../estilo.css"  media="screen,projection"/>
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <meta charset="utf-8">
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
-      <script src="http://digitalbush.com/files/jquery/maskedinput/rc3/jquery.maskedinput.js" type="text/javascript"></script>
-      <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-app.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
-      <script src="js/side_bar.js"></script>
-      <script src="js/treinos.js"></script>
-      <script type="text/javascript" src="js/app.js"></script>
 
     </head>
 
@@ -32,10 +26,10 @@
         <nav>
          <div class="nav-wrapper blue-grey darken-4">
           <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a onclick="index();" class="waves-light large"><i class="material-icons">fitness_center</i></a></li>
-            <li><a onclick="coins();" class="waves-light large"><i class="material-icons">add_circle_outline</i></a></li>
-            <li><a onclick="fichadet();" class="waves-light large"><i class="material-icons">account_circle</i></a></li>
-            <li><a href="login.html" class="waves-light brand-logo right"><i class="material-icons">directions_run</i></a></li>
+           <li><a href="index.html" class="waves-light large"><i class="material-icons">fitness_center</i></a></li>
+           <li><a href="coins.html" class="waves-light large"><i class="material-icons">add_circle_outline</i></a></li>
+           <li><a href="collapsible.html" class="waves-light large"><i class="material-icons">account_circle</i></a></li>
+           <li><a href="login.html" class="waves-light brand-logo right"><i class="material-icons">directions_run</i></a></li>
           </ul>
          </div>
         </nav>
@@ -47,11 +41,11 @@
     <div class="col s3">
       <div class="card blue-grey darken-1">
         <div class="card-content white-text">
-          <span class="card-title">Domingo</span>
+          <li><a class="waves-effect waves-light modal-trigger white-text" href="#modal1">Domingo</a></li>
          
         </div>
         <div class="card-action">
-          <a href="#modal2">Braço/pernas</a>
+          <a href="#modal1" class="modal-trigger">Braço/pernas</a>
   
         </div>
       </div>
@@ -61,11 +55,11 @@
     <div class="col s3">
       <div class="card blue-grey darken-1">
         <div class="card-content white-text">
-          <span class="card-title">Segunda</span>
+          <li><a class="waves-effect waves-light modal-trigger white-text" href="#modal2">Segunda</a></li>
           
         </div>
         <div class="card-action">
-          <a href="#">Repouso</a>
+          <a href="#modal2" class="modal-trigger">Repouso</a>
      
         </div>
       </div>
@@ -77,10 +71,10 @@
     <div class="col s3">
       <div class="card blue-grey darken-1">
         <div class="card-content white-text">
-          <span class="card-title">Terça
+           <li><a class="waves-effect waves-light modal-trigger white-text" href="#modal3">Terça</a></li>
         </div>
         <div class="card-action">
-          <a href="#">Natação</a>
+          <a href="#modal3" class="modal-trigger">Natação</a>
   
         </div>
       </div>
@@ -90,11 +84,11 @@
     <div class="col s3">
       <div class="card blue-grey darken-1">
         <div class="card-content white-text">
-          <span class="card-title">Quarta</span>
+           <li><a class="waves-effect waves-light modal-trigger white-text" href="#modal4">Quarta</a></li>
           
         </div>
         <div class="card-action">
-          <a href="#">Repouso</a>
+          <a href="#modal4" class="modal-trigger">Repouso</a>
      
         </div>
       </div>
@@ -103,11 +97,11 @@
 <div class="col s3">
       <div class="card blue-grey darken-1">
         <div class="card-content white-text">
-          <span class="card-title">Quinta</span>
+           <li><a class="waves-effect waves-light modal-trigger white-text" href="#modal5">Quinta</a></li>
          
         </div>
         <div class="card-action">
-          <a href="#">Repouso</a>
+          <a href="#modal5" class="modal-trigger">Repouso</a>
   
         </div>
       </div>
@@ -119,11 +113,11 @@
     <div class="col s3">
       <div class="card blue-grey darken-1">
         <div class="card-content white-text">
-          <span class="card-title">Sexta</span>
+           <li><a class="waves-effect waves-light modal-trigger white-text" href="#modal6">Sexta</a></li>
          
         </div>
         <div class="card-action">
-          <a href="#">Karate</a>
+          <a href="#modal6" class="modal-trigger">Karate</a>
   
         </div>
       </div>
@@ -133,71 +127,282 @@
     <div class="col s3">
       <div class="card blue-grey darken-1">
         <div class="card-content white-text">
-          <span class="card-title">Sabado</span>
+           <li><a class="waves-effect waves-light modal-trigger white-text" href="#modal7">Sabado</a></li>
           
         </div>
         <div class="card-action">
-          <a href="#">Repouso</a>
+          <a href="#modal7" class="modal-trigger">Repouso</a>
      
         </div>
       </div>
     </div>
   </div>
 
+       </div>
   
-<div id="modal2" class="modal">
-  <div class="modal-content">
-    <h4>Treino</h4>
-      
-    <div class="row">
-      <div class="input-field col s10">
-        <img src="../images/ff.jpg" alt="" class="circle responsive-img produto" height="200" width="200">
-        <label for="cpf" class="grey-text text-darken-2 ">Pernas/Braços</label>
-</div>
-    </div>
+            
+  
+<div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Treino</h4>
+        
+      <div class="row">
+        <div class="input-field col s10">
+           
 
-<div class="row">
-      <div class="input-field col s10">
-        <p>descriçao</p>
+          <label for="cpf" class="grey-text text-darken-2 ">Pernas/Braços</label>
+        </div>
       </div>
-</div>
-
-  <div class="row">
-    <div class="col s12"> 
-    </div>   
-</div>
-
-
-   <div class="row">
- <div class="modal-footer">
-    <a href="#!" class="modal-close waves-effect waves-grey btn-flat grey darken-2 white-text">Fechar Login</a>
-  </div>
-</div>
-
-  </div>
-</div>
-
-       </div>   
   
+  <div class="row">
+        <div class="input-field col s10">
+          <p>descriçao</p>
+        </div>
+  </div>
 
-      <script type="text/javascript" src="js/jquery.js"></script><!--JavaScript at end of body for optimized loading-->
+    <div class="row">
+      <div class="col s12"> 
+      </div>   
+  </div>
+
+
+     <div class="row">
+   <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-grey btn-flat grey darken-2 white-text">Fechar</a>
+    </div>
+  </div>
+  
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>Treino</h4>
+        
+      <div class="row">
+        <div class="input-field col s10">
+           
+     
+         <label for="cpf" class="grey-text text-darken-2 ">Repouso</label>
+        </div>
+      </div>
+  
+  <div class="row">
+        <div class="input-field col s10">
+          <p>descriçao</p>
+        </div>
+  </div>
+
+    <div class="row">
+      <div class="col s12"> 
+      </div>   
+  </div>
+
+
+     <div class="row">
+   <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-grey btn-flat grey darken-2 white-text">Fechar</a>
+    </div>
+  </div>
+  
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <h4>Treino</h4>
+        
+      <div class="row">
+        <div class="input-field col s10">
+           
+          <label for="cpf" class="grey-text text-darken-2 ">Natação</label>
+        </div>
+      </div>
+  
+  <div class="row">
+        <div class="input-field col s10">
+          <p>descriçao</p>
+        </div>
+  </div>
+
+    <div class="row">
+      <div class="col s12"> 
+      </div>   
+  </div>
+
+
+     <div class="row">
+   <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-grey btn-flat grey darken-2 white-text">Fechar</a>
+    </div>
+  </div>
+  
+    </div>
+  </div>
+
+  <div id="modal4" class="modal">
+    <div class="modal-content">
+      <h4>Treino</h4>
+        
+      <div class="row">
+        <div class="input-field col s10">
+           
+
+          <label for="cpf" class="grey-text text-darken-2 ">Repouso</label>
+        </div>
+      </div>
+  
+  <div class="row">
+        <div class="input-field col s10">
+          <p>descriçao</p>
+        </div>
+  </div>
+
+    <div class="row">
+      <div class="col s12"> 
+      </div>   
+  </div>
+
+
+     <div class="row">
+   <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-grey btn-flat grey darken-2 white-text">Fechar</a>
+    </div>
+  </div>
+  
+    </div>
+  </div>
+
+  <div id="modal5" class="modal">
+    <div class="modal-content">
+      <h4>Treino</h4>
+        
+      <div class="row">
+        <div class="input-field col s10">
+           
+
+          <label for="cpf" class="grey-text text-darken-2 ">Repouso</label>
+        </div>
+      </div>
+  
+  <div class="row">
+        <div class="input-field col s10">
+          <p>descriçao</p>
+        </div>
+  </div>
+
+    <div class="row">
+      <div class="col s12"> 
+      </div>   
+  </div>
+
+
+     <div class="row">
+   <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-grey btn-flat grey darken-2 white-text">Fechar</a>
+    </div>
+  </div>
+  
+    </div>
+  </div>
+
+  <div id="modal6" class="modal">
+    <div class="modal-content">
+      <h4>Treino</h4>
+        
+      <div class="row">
+        <div class="input-field col s10">
+           
+
+          <label for="cpf" class="grey-text text-darken-2 ">Karate</label>
+        </div>
+      </div>
+  
+  <div class="row">
+        <div class="input-field col s10">
+          <p>descriçao</p>
+        </div>
+  </div>
+
+    <div class="row">
+      <div class="col s12"> 
+      </div>   
+  </div>
+
+
+     <div class="row">
+   <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-grey btn-flat grey darken-2 white-text">Fechar</a>
+    </div>
+  </div>
+  
+    </div>
+  </div>
+
+  <div id="modal7" class="modal">
+    <div class="modal-content">
+      <h4>Treino</h4>
+        
+      <div class="row">
+        <div class="input-field col s10">
+    
+
+          <label for="cpf" class="grey-text text-darken-2 ">Repouso</label>
+        </div>
+      </div>
+  
+  <div class="row">
+        <div class="input-field col s10">
+          <p>descriçao</p>
+        </div>
+  </div>
+
+    <div class="row">
+      <div class="col s12"> 
+      </div>   
+  </div>
+
+
+     <div class="row">
+   <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-grey btn-flat grey darken-2 white-text">Fechar</a>
+    </div>
+  </div>
+  
+    </div>
+  </div>
+     
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajx/libs/materialize/0.100.1/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script><!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script type="text/javascript" src="app.js"></script>
+      <script > document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems, options);
 
-      <script>
-        document.addEventListener('DOMContentLoaded', function() {
-          var elems = document.querySelectorAll('.modal');
-          var instances = M.Modal.init(elems, options);
-        });
-      
-        // Or with jQuery
-      
-        $(document).ready(function(){
-          $('.modal').modal();
-        });
-                
-      </script>   
+  });
 
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.carousel').carousel();
+setInterval(function(){$('.carousel').carousel('next');},2500);
+
+  });
+      
+</script>
+<script >document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+          
+</script>
     </body>
-    
   </html>
