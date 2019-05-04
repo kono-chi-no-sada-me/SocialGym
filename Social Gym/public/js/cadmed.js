@@ -13,7 +13,7 @@ function cadastrar_exame(){
             medicamentos: document.getElementById("medicamentos").value,
             cardiaco: cardiaco_,
             doencas_respiratorias: doencas_respiratorias_,
-            doencas_cronicas: document.getElementById("doencas_cronicas").values,
+            doencas_cronicas: document.getElementById("doencas_cronicas").value,
             outros: document.getElementById("outros").value,
             observacoes: document.getElementById("observacoes").value,
             treinos_recomendados: document.getElementById("treinos_recomendados").value

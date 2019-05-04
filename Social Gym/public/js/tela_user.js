@@ -22,7 +22,7 @@ function load_informations(){
                             nivel: item.val().nivel+1,
                             moedas: item.val().moedas + 150,
                             exp: 0
-                        });
+                        });         
                     }
                 }
             }
