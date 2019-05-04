@@ -21,3 +21,11 @@ ________________________________________________________________________________
 ## Canvas
 
 <a href="https://imgur.com/b6xzf9L"> Conceito da ideia </a>
+
+# Mock-up (Entrega Design)
+
+<a href="https://imgur.com/gallery/IGm1yUY"> Design </a>
+
+# Landing page (Entrega Design)
+
+<a href="https://www.facebook.com/Social-Gym-2455136358052871/?modal=admin_todo_tour"> FanPage </a>
