@@ -158,14 +158,36 @@
         
       <div class="row">
         <div class="input-field col s10">
-
           <label for="cpf" class="grey-text text-darken-2 ">Pernas/Braços</label>
         </div>
       </div>
   
   <div class="row">
-        <div class="input-field col s10">
-          <p>Agachamento 3x 60kg<br>Leg Press 3x 120kg</p>
+        <div class=" col s10">
+          <label>
+              <input name="tipo" id="rosca_direta" type="checkbox"  />
+              <span class="grey-text text-darken-4">Rosca direta 3x 10kg</span>
+          </label><br>
+          <br>
+          <label>
+              <input name="tipo" id="scott" type="checkbox"  />
+              <span class="grey-text text-darken-4">Scott 3x 5kg</span>
+          </label><br>
+          <hr>
+          <label>
+              <input name="tipo" id="agachamento" type="checkbox"  />
+              <span class="grey-text text-darken-4">Agachamento 3x 60kg</span>
+          </label><br>
+          <br>
+          <label>
+              <input name="tipo" id="legpress" type="checkbox"  />
+              <span class="grey-text text-darken-4">Leg Press 3x 120kg</span>
+          </label><br>
+          <br>
+          <hr>
+          <button class="btn waves-effect waves-light blue-grey darken-4 white-text" onclick="Treino();">Contabilizar Treino
+              <i class="material-icons right">check</i>
+          </button>
         </div>
   </div>
 
@@ -177,7 +199,7 @@
 
      <div class="row">
    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-grey btn-flat grey darken-2 white-text">Fechar</a>
+      <a class="modal-close waves-effect waves-grey btn-flat grey darken-2 white-text">Fechar</a>
     </div>
   </div>
   
@@ -386,6 +408,7 @@
     <script type="text/javascript" src="js/jquery.js"></script><!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script type="text/javascript" src="app.js"></script>
+      <script src="js/treinos.js"></script>
       <script > document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.carousel');
     var instances = M.Carousel.init(elems, options);
