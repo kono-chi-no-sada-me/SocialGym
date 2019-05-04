@@ -22,3 +22,7 @@ function coins(){
 function treinos(){
     location.href = "treinos.html?CPF="+queryObj().CPF;
 }
+
+function conquista(){
+    location.href = "conquista.html?CPF="+queryObj().CPF;
+}

@@ -19,6 +19,38 @@ function getThings(){
     });
 }
 
+function garrafa(){
+    firebase.database().ref('/Power Fit/cliente').on('value', function(snapshot) {
+        snapshot.forEach(function(item){
+            if (queryObj().CPF == item.val().cpf){
+                if(item.val().moedas >= 900){
+                    firebase.database().ref('Power Fit'+'/cliente/'+item.val().cpf).update({
+                        moedas: item.val().moedas - 900
+                    });
+                }else{
+                    window.alert("Saldo insuficiente!");
+                }
+            }
+        });
+    });
+}
+
+function luva(){
+    firebase.database().ref('/Power Fit/cliente').on('value', function(snapshot) {
+        snapshot.forEach(function(item){
+            if (queryObj().CPF == item.val().cpf){
+                if(item.val().moedas >= 400){
+                    firebase.database().ref('Power Fit'+'/cliente/'+item.val().cpf).update({
+                        moedas: item.val().moedas - 400
+                    });
+                }else{
+                    window.alert("Saldo insuficiente!");
+                }
+            }
+        });
+    });
+}
+
 function queryObj() {
     var result = {}, keyValuePairs = location.search.slice(1).split("&");
     keyValuePairs.forEach(function(keyValuePair) {
