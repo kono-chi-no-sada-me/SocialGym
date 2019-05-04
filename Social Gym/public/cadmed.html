@@ -1,160 +1,160 @@
 
 <!DOCTYPE html>
 
-  <html lang="pt-br">
+<html lang="pt-br">
 
-    <head>
-      <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-app.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
-      
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <meta charset="utf-8">
+  <head>
+    <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script src="js/cadmed.js"></script>
+    
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8">
 
-    </head>
+  </head>
 
-    <body>
-      
-    <div class="container-fluid">
-   <div class="row">
-       <center><h5><b><img src="../images/gym.png"></b></h5></center>
-         <center><h3><b>VIDA EXTRA</b></center>
-       </div> 
-       <div class="row"> 
-        <nav>
-         <div class="nav-wrapper blue-grey darken-4">
-          <center><b class="white-text">AVALIAÇÃO MEDICO</b></center>
-         </div>
-        </nav>
-       </div> 
-
-
+  <body>
+    
+  <div class="container-fluid">
  <div class="row">
+     <center><h5><b><img src="../images/gym.png"></b></h5></center>
+       <center><h3><b>VIDA EXTRA</b></center>
+     </div> 
+     <div class="row"> 
+      <nav>
+       <div class="nav-wrapper blue-grey darken-4">
+        <center><b class="white-text">AVALIAÇÃO MEDICO</b></center>
+       </div>
+      </nav>
+     </div> 
+
+
+<div class="row">
 <div class="col s12"></div>
-      <div class="col s12">
-             <!-- <form class="col s12" name="" method="POST"> -->
-                   <div class="input-field col s4">
-                        <input  name="nome" id="nome" type="text" class="validate grey-text">
-                        <label for="nome" class="grey-text">Altura</label>
-                  </div>
-                  <div class="input-field col s4">
-                        <input  name="cpf" id="cpf" type="text" class="validate grey-text">
-                        <label for="cpf" class="grey-text">Peso</label>
-                  </div>
-                  <div class="input-field col s4">
-                        <input  name="cpf" id="cpf" type="text" class="validate grey-text">
-                        <label for="cpf" class="grey-text">Tipo Sanguineo</label>
-                  </div>
-                 
+    <div class="col s12">
+           <!-- <form class="col s12" name="" method="POST"> -->
+                 <div class="input-field col s4">
+                      <input  name="nome" id="altura" type="text" class="validate grey-text">
+                      <label for="nome" class="grey-text">Altura</label>
+                </div>
+                <div class="input-field col s4">
+                      <input  name="cpf" id="peso" type="text" class="validate grey-text">
+                      <label for="cpf" class="grey-text">Peso</label>
+                </div>
+                <div class="input-field col s4">
+                      <input  name="cpf" id="tipo_sanguineo" type="text" class="validate grey-text">
+                      <label for="cpf" class="grey-text">Tipo Sanguineo</label>
+                </div>
+               
+                <br>
+                 <div class="col s12">
+           <!-- <form class="col s12" name="" method="POST"> -->
+                 <div class="input-field col s4">
+                      <input  name="nome" id="ultima_data" type="date" class="validate grey-text">
+                      <label for="nome" class="grey-text">Ultimo exame</label>
+                </div>
+                <div class="input-field col s4">
+                      <input  name="cpf" id="lesoes" type="text" class="validate grey-text">
+                      <label for="cpf" class="grey-text">Lesoes</label>
+                </div>
+                <div class="input-field col s4">
+                      <input  name="cpf" id="cirurgias" type="text" class="validate grey-text">
+                      <label for="cpf" class="grey-text">Cirurgias</label>
+                </div>
+               
+                <br>
+                  <div class="col s12">
+           <!-- <form class="col s12" name="" method="POST"> -->
+                 <div class="input-field col s4">
+                      <input  name="nome" id="medicamentos" type="text" class="validate grey-text">
+                      <label for="nome" class="grey-text">Medicamentos</label>
+                </div>
+                <div class="col s4 ">
                   <br>
-                   <div class="col s12">
-             <!-- <form class="col s12" name="" method="POST"> -->
-                   <div class="input-field col s4">
-                        <input  name="nome" id="nome" type="date" class="validate grey-text">
-                        <label for="nome" class="grey-text">Ultimo exame</label>
-                  </div>
-                  <div class="input-field col s4">
-                        <input  name="cpf" id="cpf" type="text" class="validate grey-text">
-                        <label for="cpf" class="grey-text">Lesoes</label>
-                  </div>
-                  <div class="input-field col s4">
-                        <input  name="cpf" id="cpf" type="text" class="validate grey-text">
-                        <label for="cpf" class="grey-text">Cirurgias</label>
-                  </div>
-                 
+                                  <label for="Tipo" class="grey-text text-darken-4">Cardiaco</label>
+                          
+                          <label>
+                            <input name="tipo" id="cardiaco_sim" type="radio"  />
+                            <span class="grey-text text-darken-4">sim</span>
+                          </label>
+                       
+                          <label>
+                            <input name="tipo" id="cardiaco_nao" type="radio" />
+                            <span class="grey-text text-darken-4">não</span>
+                          </label>
+ 
+                      </div>
+               <div class="col s4 ">
                   <br>
-                    <div class="col s12">
-             <!-- <form class="col s12" name="" method="POST"> -->
-                   <div class="input-field col s4">
-                        <input  name="nome" id="nome" type="text" class="validate grey-text">
-                        <label for="nome" class="grey-text">Medicamentos</label>
-                  </div>
-                  <div class="col s4 ">
-                    <br>
-                                    <label for="Tipo" class="grey-text text-darken-4">Cardiaco</label>
-                            
-                            <label>
-                              <input name="tipo" id="gerente" type="radio"  />
-                              <span class="grey-text text-darken-4">sim</span>
-                            </label>
-                         
-                            <label>
-                              <input name="tipo" id="personal" type="radio" />
-                              <span class="grey-text text-darken-4">não</span>
-                            </label>
-   
-                        </div>
-                 <div class="col s4 ">
-                    <br>
-                                    <label for="Tipo" class="grey-text text-darken-4">Doeças Respiratorias</label>
-                            
-                            <label>
-                              <input name="tipo" id="gerente" type="radio"  />
-                              <span class="grey-text text-darken-4">sim</span>
-                            </label>
-                         
-                            <label>
-                              <input name="tipo" id="personal" type="radio" />
-                              <span class="grey-text text-darken-4">não</span>
-                            </label>
-   
-                        </div>
-                 
-                  <br>
+                        <label for="Tipo" class="grey-text text-darken-4">Doenças Respiratorias</label>
+                          
+                          <label>
+                            <input name="tipo1" id="doencas_respiratorias_sim" type="radio"  />
+                            <span class="grey-text text-darken-4">sim</span>
+                          </label>
+                       
+                          <label>
+                            <input name="tipo1" id="doencas_respiratorias_nao" type="radio" />
+                            <span class="grey-text text-darken-4">não</span>
+                          </label>
+ 
+                      </div>
+               
+                <br>
 
-                    <div class="col s12">
-             <!-- <form class="col s12" name="" method="POST"> -->
-                   <div class="input-field col s4">
-                        <input  name="nome" id="nome" type="text" class="validate grey-text">
-                        <label for="nome" class="grey-text">Doenças cronicas</label>
-                  </div>
-                  <div class="input-field col s4">
-                        <input  name="cpf" id="cpf" type="text" class="validate grey-text">
-                        <label for="cpf" class="grey-text">Outros</label>
-                  </div>
-                  <div class="input-field col s4">
-                        <input  name="cpf" id="cpf" type="text" class="validate grey-text">
-                        <label for="cpf" class="grey-text">observaçoes:</label>
-                  </div>
-                 
-                  <br>
+                  <div class="col s12">
+           <!-- <form class="col s12" name="" method="POST"> -->
+                 <div class="input-field col s4">
+                      <input  name="nome" id="doencas_cronicas" type="text" class="validate grey-text">
+                      <label for="nome" class="grey-text">Doenças cronicas</label>
+                </div>
+                <div class="input-field col s4">
+                      <input  name="cpf" id="outros" type="text" class="validate grey-text">
+                      <label for="cpf" class="grey-text">Outros</label>
+                </div>
+                <div class="input-field col s4">
+                      <input  name="cpf" id="observacoes" type="text" class="validate grey-text">
+                      <label for="cpf" class="grey-text">observaçoes:</label>
+                </div>
+               
+                <br>
 
-          <div class="row">
+        <div class="row">
 
-      <div class="row">
-        <div class="input-field col s12">
-          <textarea id="textarea1" class="materialize-textarea"></textarea>
-          <label for="textarea1">Treinos Recomendados</label>
-        </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <textarea id="treinos_recomendados" class="materialize-textarea"></textarea>
+        <label for="treinos_recomendados">Treinos Recomendados</label>
       </div>
-  
-  </div>
+    </div>
+
+</div>
 
 
-                        <br>
-                        <br>
-                   <button class="btn waves-effect waves-light  blue-grey darken-4 white-text" onclick="cadastrar_cliente();">Cadastrar
-                  <i class="material-icons right">check</i>
-                  </button>
-               <!-- </form> -->
-             </div>   
-         <div class="col s4"></div>
-     </div>
-
-
-
-
-            
+                      <br>
+                      <br>
+                 <button class="btn waves-effect waves-light  blue-grey darken-4 white-text" onclick="cadastrar_exame();">Cadastrar
+                <i class="material-icons right">check</i>
+                </button>
+             <!-- </form> -->
+           </div>   
+       <div class="col s4"></div>
    </div>
 
-      <script type="text/javascript" src="js/jquery.js"></script><!--JavaScript at end of body for optimized loading-->
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script type="text/javascript" src="js/app.js"></script>
-      <script src="js/cadastrar_cliente.js"></script>
-    </body>
-    
-  </html>
+
+
+
+          
+ </div>
+
+    <script type="text/javascript" src="js/jquery.js"></script><!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
+  
+</html>
