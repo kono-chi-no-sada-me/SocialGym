@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+
+  <html lang="pt-br">
+
+    <head>
+      <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+      
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta charset="utf-8">
+
+    </head>
+
+    <body>
+      
+    <div class="container-fluid">
+   <div class="row">
+       <center><h5><b><img src="../images/gym.png"></b></h5></center>
+         <center><h3><b>VIDA EXTRA</b></center>
+       </div> 
+       <div class="row"> 
+        <nav>
+         <div class="nav-wrapper blue-grey darken-4">
+          <center><b class="white-text">CADASTRO DE produto</b></center>
+         </div>
+        </nav>
+       </div> 
+
+
+ <div class="row">
+<div class="col s12"></div>
+      <div class="col s12">
+             <!-- <form class="col s12" name="" method="POST"> -->
+                   <div class="input-field col s11">
+                        <input  name="nome" id="nome" type="text" class="validate grey-text">
+                        <label for="nome" class="grey-text">Nome</label>
+                  </div>
+                  <div class="input-field col s11">
+                        <input  name="cpf" id="cpf" type="text" class="validate grey-text">
+                        <label for="cpf" class="grey-text">valor</label>
+                  </div>
+                  <div class="input-field col s11">
+                        <input  name="senha" id="senha" type="password" class="validate grey-text">
+                        <label for="senha" class="grey-text">Senha</label>
+                  </div>
+                 
+                  <br>
+
+          
+
+
+                        <br>
+                        <br>
+                   <button class="btn waves-effect waves-light  blue-grey darken-4 white-text" onclick="cadastrar_cliente();">Cadastrar
+                  <i class="material-icons right">check</i>
+                  </button>
+               <!-- </form> -->
+             </div>   
+         <div class="col s4"></div>
+     </div>
+
+
+
+
+        <footer class="page-footer blue-grey darken-4">
+          <div class="footer-copyright">
+            <div class="container">
+            © 2019 Hackathon_SOCIAL GYM.
+            </div>
+          </div>
+        </footer>
+            
+   </div>
+
+      <script type="text/javascript" src="js/jquery.js"></script><!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/app.js"></script>
+      <script src="js/cadastrar_cliente.js"></script>
+    </body>
+    
+  </html>
